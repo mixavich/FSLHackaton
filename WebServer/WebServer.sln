@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServer", "WebServer\WebServer.csproj", "{5DBE3714-0E4A-42F2-BF82-3D59033069A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateService", "TranslateService\TranslateService.csproj", "{AF8B84FF-EC09-452C-BB43-A7C7A2E0FF8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5DBE3714-0E4A-42F2-BF82-3D59033069A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DBE3714-0E4A-42F2-BF82-3D59033069A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DBE3714-0E4A-42F2-BF82-3D59033069A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8B84FF-EC09-452C-BB43-A7C7A2E0FF8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8B84FF-EC09-452C-BB43-A7C7A2E0FF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8B84FF-EC09-452C-BB43-A7C7A2E0FF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8B84FF-EC09-452C-BB43-A7C7A2E0FF8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
