@@ -1,3 +1,8 @@
-<p>
-  word-form works!
-</p>
+<div class="row">
+  <div class="col-4">
+    <input #original>
+    <input #translation
+           (keyup.enter)="addWord(original.value, translation.value)">
+    <button (click)="addWord(original.value, translation.value)">Add</button>
+  </div>
+</div>

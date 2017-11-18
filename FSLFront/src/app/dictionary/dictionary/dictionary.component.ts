@@ -8,11 +8,10 @@ import {WordsRepository} from "../../model-module/words-repository.model";
 })
 export class DictionaryComponent implements OnInit {
 
+  words = this.wordsRepository.getWords();
+
   constructor(private wordsRepository: WordsRepository) {
   }
-
-
-
   ngOnInit() {
   }
 

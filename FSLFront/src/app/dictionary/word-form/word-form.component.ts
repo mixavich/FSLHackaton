@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {WordsRepository} from "../../model-module/words-repository.model";
 
 @Component({
   selector: 'app-word-form',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WordFormComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private wordsRepository: WordsRepository) {
+  }
+
+  addWord(original, translation) {
+    console.log("adding word to base", original, translation);
+
+    this.wordsRepository.addWord(original, translation);
+  }
 
   ngOnInit() {
   }

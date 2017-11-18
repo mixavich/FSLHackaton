@@ -1,4 +1,10 @@
-
-<ul>
-  <li ng-repeat="word in wordsRepository.getWords()"> ---</li>
-</ul>
+<table class="table table-bordered">
+  <tr>
+    <th>Слово</th>
+    <th>Перевод</th>
+  </tr>
+  <tr *ngFor="let word of wordList">
+    <td>{{word.original}}</td>
+    <td>{{word.translation}}</td>
+  </tr>
+</table>

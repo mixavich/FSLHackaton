@@ -4,16 +4,18 @@ import {Word} from './word.model';
 @Injectable()
 export class WordsRepository {
   private words: Word[] = [new Word(1, 'Оригинал', 'Original'),
-    new Word(2, 'Оригинал', 'Original'),
-    new Word(3, 'Оригинал', 'Original'),
-    new Word(4, 'Оригинал', 'Original'),
-    new Word(5, 'Оригинал', 'Original')];
+    new Word(2, 'Cобака', 'Dog'),
+    new Word(3, 'Fultepoductor', 'Фултеподюктор'),
+    new Word(4, 'Ежевика ?', 'Cranberries'),
+    new Word(5, 'Паридигма', 'Paradigm')];
 
   getWords(): Word[] {
     return this.words;
   }
 
-  addWord(word: Word) {
+  addWord(original: string, translation: string) {
+    //capitalize first letter
+    let word = new Word(1, original,translation);
     this.words.push(word);
   }
 

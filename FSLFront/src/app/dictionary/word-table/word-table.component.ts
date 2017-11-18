@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-word-table',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./word-table.component.css']
 })
 export class WordTableComponent implements OnInit {
+  @Input() wordList: string;
 
   constructor() { }
 
